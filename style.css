@@ -1,0 +1,121 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* setting font on the full body */
+body {
+  font-size: 62.5%;
+  background-color: #7d0a0a;
+}
+
+/* main container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+
+  color: #ffffff;
+}
+
+/* h1 designs */
+.stopwatch_h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+/* stop watch container */
+.stop_watch_container {
+  text-align: center;
+}
+
+/* stopwatch display */
+#stopwatch_display {
+  font-size: 7rem;
+  margin: 2.5rem 0;
+  font-weight: 400;
+}
+
+/* Buttons container */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+/* Buttons */
+#start_time,
+#stop_time,
+#reset_time {
+  border: none;
+  padding: 60px 0;
+  font-size: 1.5rem;
+  background-color: #fae860;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 20px 15px 2px rgba(34, 32, 32, 0.3);
+}
+
+#stop_time {
+  cursor: pointer;
+}
+
+#start_time {
+  padding-left: 30px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  cursor: pointer;
+}
+
+#reset_time {
+  padding-right: 30px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  cursor: pointer;
+}
+
+/* hover effects */
+#start_time:hover,
+#stop_time:hover,
+#reset_time:hover {
+  color: #868e96;
+}
+
+/*making it responsive for mobile screen  */
+@media (max-width: 660px) {
+  .stopwatch_h1 {
+    font-size: 3rem;
+  }
+  #stopwatch_display {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+  #start_time,
+  #stop_time,
+  #reset_time {
+    border: none;
+    padding: 30px 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  #start_time {
+    padding-left: 15px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  #reset_time {
+    padding-right: 15px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+}
